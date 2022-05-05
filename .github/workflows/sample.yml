@@ -7,8 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: ectho "Hi"
+        run: echo "Hi"
       - name: multiline script
         run: |
           node -v
           npm -v
+      - name: python command
+        run: |
+          from datetime import date
+          d = date.fromisoformat('2019-12-04')
+          print(d)
+        shell: python
+
