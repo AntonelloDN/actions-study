@@ -18,4 +18,12 @@ jobs:
           d = date.fromisoformat('2019-12-04')
           print(d)
         shell: python
+  run-shell-on-windows:
+    runs-on: windows-latest
+    steps:
+      - name: get location
+        run: Get-Location
+      - name: get location bash
+        run: pwd
+        shell: bash
 
