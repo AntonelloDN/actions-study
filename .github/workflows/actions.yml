@@ -1,6 +1,8 @@
 name: Actions Test
 
 on: 
+  repository_dispatch:
+    types: [run] # name of the custom type
   # schedule:
   #   - cron: "0/5 * * * *"
   # push: 
