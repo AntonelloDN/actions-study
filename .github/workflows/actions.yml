@@ -10,6 +10,7 @@ jobs:
         run: |
           pwd
           ls -a
+          echo "Hi"
       - name: Checkout Action
         uses: actions/checkout@v3.0.2
       - name: Check Files After Checkout
