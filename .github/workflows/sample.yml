@@ -6,7 +6,7 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
+      - name: etcho a string
         run: echo "Hi"
       - name: multiline script
         run: |
