@@ -4,4 +4,4 @@ RUN apt update
 # Source code
 COPY . .
 WORKDIR .
-RUN ["./test.rb"]
+CMD [ "ruby", "./test.rb"]
